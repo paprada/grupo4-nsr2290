@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'domain/controller/controladduser.dart';
 import 'ui/app.dart';
 
 void main() async {
@@ -19,6 +20,7 @@ void main() async {
               appId: "1:23948098148:web:e6f54efd8af319dd32fd71"))
       : await Firebase.initializeApp();
   Get.put(ControlChat());
-  Get.put(ControlAuthFirebase());
+  Get.put(ControlAuth());
+  Get.put(ControlAddUser());
   runApp(const App());
 }

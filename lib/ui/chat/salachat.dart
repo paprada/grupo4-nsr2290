@@ -20,11 +20,11 @@ class _ChatState extends State<Chat> {
   @override
   Widget build(BuildContext context) {
     TextEditingController mensaje = TextEditingController();
-    ControlAuthFirebase ca = Get.find();
+    ControlAuth ca = Get.find();
     ControlChat cc = Get.find();
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bienvenido al chat ${ca.emailf}"),
+        title: Text("Bienvenido al chat ${ca.emailr}"),
         actions: [
           IconButton(
               onPressed: () {
@@ -52,7 +52,7 @@ class _ChatState extends State<Chat> {
                     onPressed: () {
                       if (mensaje.text.isNotEmpty) {
                         final datos = {
-                          'email': ca.emailf,
+                          'email': ca.emailr,
                           'fecha': DateTime.now(),
                           'mensaje': mensaje.text
                         };

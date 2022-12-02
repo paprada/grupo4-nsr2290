@@ -18,7 +18,7 @@ class Mensaje extends StatefulWidget {
 }
 
 class _MensajeState extends State<Mensaje> {
-  ControlAuthFirebase ca = Get.find();
+  ControlAuth ca = Get.find();
   ControlChat cc = Get.find();
   @override
   Widget build(BuildContext context) {
@@ -30,13 +30,13 @@ class _MensajeState extends State<Mensaje> {
               itemBuilder: (context, i) {
                 return Card(
                   color: resultado.data!.docs[i].get("email").toString() ==
-                          ca.emailf
+                          ca.emailr
                       ? Colors.grey.shade400
                       : Colors.blueGrey.shade100,
                   child: ListTile(
                     leading: CircleAvatar(
                       child: resultado.data!.docs[i].get("email").toString() ==
-                              ca.emailf
+                              ca.emailr
                           ? const Icon(Icons.arrow_forward)
                           : const Icon(Icons.arrow_back),
                     ),
@@ -44,7 +44,7 @@ class _MensajeState extends State<Mensaje> {
                       resultado.data!.docs[i].get("mensaje").toString(),
                       textAlign:
                           resultado.data!.docs[i].get("email").toString() ==
-                                  ca.emailf
+                                  ca.emailr
                               ? TextAlign.start
                               : TextAlign.end,
                     ),
@@ -52,7 +52,7 @@ class _MensajeState extends State<Mensaje> {
                       resultado.data!.docs[i].get("email").toString(),
                       textAlign:
                           resultado.data!.docs[i].get("email").toString() ==
-                                  ca.emailf
+                                  ca.emailr
                               ? TextAlign.start
                               : TextAlign.end,
                     ),
