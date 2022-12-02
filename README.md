@@ -1,6 +1,9 @@
-# chat_firebase
+# Reto 4 # NRC2290 - Grupo4
 
 A new Flutter project.
+
+![b7e6ac768524d85763b10c25b5c36e72](https://user-images.githubusercontent.com/113076117/205198078-05b02d3d-d278-472f-a4ef-6205610758a3.gif)
+El mensaje de advertencia sale cuando los datos de registro o login no son correctos.
 
 ## Getting Started
 
