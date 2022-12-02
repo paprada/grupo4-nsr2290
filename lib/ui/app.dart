@@ -10,7 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Reto 3 - Grupo 4 2290',
-      theme: ThemeData(primarySwatch: Colors.blueGrey),
+      theme: ThemeData(primarySwatch: Colors.cyan),
       debugShowCheckedModeBanner: false,
       home: const Login(),
       routes: {

@@ -31,7 +31,7 @@ class _MensajeState extends State<Mensaje> {
                 return Card(
                   color: resultado.data!.docs[i].get("email").toString() ==
                           ca.emailr
-                      ? Colors.grey.shade400
+                      ? Colors.blueAccent
                       : Colors.blueGrey.shade100,
                   child: ListTile(
                     leading: CircleAvatar(
